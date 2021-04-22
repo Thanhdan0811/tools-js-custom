@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgray;
+    width: 500px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.slider {
+    width: 120px;
+    height: 8px;
+    background: #fff;
+    position: relative;
+    margin: auto;
+}
+.slider-range {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* width: 50px; */
+    background: lightgreen;
+}
+.slider-handle {
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    display: block;
+    background: lightsalmon;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
