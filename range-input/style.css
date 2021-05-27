@@ -6,12 +6,16 @@
 body {
     background-color: lightgray;
     width: 500px;
-    margin: auto;
+    /* margin: auto; */
     padding-top: 100px;
+    padding-left: 100px;
+}
+.mt-50 {
+    margin-top: 50px;
 }
 .container {
     width: 300px;
-    margin: auto;
+    /* margin: auto; */
 }
 .slider {
     /* width: 100%; */
