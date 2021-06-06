@@ -3,7 +3,7 @@ function rangeInput(selector, obj) {
         return;
     }
     if(!document.querySelector(selector)) return;
-    console.log("obj", obj);
+    // console.log("obj", obj);
     let slider = document.querySelector(selector);
     let {range,handle,leftSlider,rightSlider,widthSlider} = setUpClass();
     let {min = 0, max = 100, step = 1, value = 50} = obj;
@@ -98,6 +98,27 @@ function rangeInput(selector, obj) {
 }
 // rangeInput.prototype.setUpClass
 
-window.rangeInput = rangeInput;
-window.rangeInput("#slider-custom", "");
+// window.rangeInput = rangeInput;
+// window.rangeInput("#slider-custom", "");
 
+let obj = {
+    a : 5,
+    b : 7,
+    get: function() {
+        function goi() {
+            console.log("incal", this)
+        };
+        console.log("out",this);
+        goi.call(this);
+    }
+}
+obj.get();
+
+// document.querySelector(".test").addEventListener("click", function(){
+//     console.log(this);
+//     function call() {
+//         console.log(this);
+//     }
+//     call();
+
+// })
